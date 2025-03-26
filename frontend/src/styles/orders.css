@@ -1,0 +1,130 @@
+.orders-page {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff9fb;
+  }
+  
+  .orders-page h1 {
+    font-size: 2.5rem;
+    color: #c94f7c;
+    margin-bottom: 1.5rem;
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .order-item {
+    background-color: #fff7fb;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .order-info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .order-info h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-info p {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #d81b60;
+  }
+  
+  .remove-btn {
+    background-color: #ff7dab;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e44e8f;
+  }
+  
+  .order-total {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .checkout-btn {
+    background-color: #ff7dab;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #e44e8f;
+    transform: scale(1.05);
+  }
+  
+  .empty-cart {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .order-item {
+      width: 95%;
+    }
+  
+    .order-info h3 {
+      font-size: 1.1rem;
+    }
+  
+    .order-info p {
+      font-size: 0.9rem;
+    }
+  
+    .price {
+      font-size: 1.1rem;
+    }
+  
+    .checkout-btn {
+      font-size: 1.1rem;
+    }
+  }
+  
