@@ -1,0 +1,186 @@
+/* ---------------- Contact Page ---------------- */
+.contact-page {
+    padding: 4rem 1.5rem;
+    background: linear-gradient(to right, #fff0f5, #fce4ec);
+    min-height: 100vh;
+    animation: fadeInPage 1s ease-in-out;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #d81b60;
+    margin-bottom: 0.5rem;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .contact-sub {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* ---------------- Contact Info ---------------- */
+  .contact-info {
+    flex: 1;
+    min-width: 250px;
+    background: #fff7fb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.1);
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    color: #c94f7c;
+    font-weight: 600;
+    gap: 0.8rem;
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  /* ---------------- Form ---------------- */
+  .contact-form {
+    flex: 2;
+    min-width: 300px;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem 1rem;
+    border: 2px solid #ffe6f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #fff9fb;
+    transition: all 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #ff7dab;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 125, 171, 0.4);
+  }
+  
+  .contact-form button {
+    padding: 0.8rem 1rem;
+    background: #ff7dab;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .contact-form button:hover {
+    background: #e44e8f;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 118, 172, 0.3);
+  }
+  
+  /* ---------------- Animations ---------------- */
+  @keyframes fadeInPage {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* ---------------- Responsive ---------------- */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-form,
+    .contact-info {
+      width: 100%;
+    }
+  }
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icon.whatsapp {
+    color: white;
+    background-color: #25d366;
+  }
+  
+  .social-icon.instagram {
+    color: white;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  }
+  
+  .social-icon.tiktok {
+    background-color: #010101;
+    color: #69c9d0;
+  }
+  
