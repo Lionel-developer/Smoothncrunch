@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // For button links
+import { Link } from 'react-router-dom';
 
 // Hero background images
 import hero1 from '../assets/hero1.jpg';
@@ -29,7 +29,6 @@ function Home() {
 
   return (
     <>
-      {/* Hero Section */}
       <div
         className="hero rotating-bg"
         style={{ backgroundImage: `url(${heroImages[currentImage]})` }}
@@ -98,7 +97,7 @@ function Home() {
       {/* Call to Action */}
       <section className="cta" data-aos="zoom-in-up" data-aos-delay="500">
         <h2>Ready to taste the magic?</h2>
-        <Link to="/order">
+        <Link to="/orders">
           <button>Order Now</button>
         </Link>
       </section>

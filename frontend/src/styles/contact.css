@@ -1,9 +1,14 @@
 /* ---------------- Contact Page ---------------- */
-.contact-page {
-    padding: 4rem 1.5rem;
+* {
+    box-sizing: border-box;
+  }
+  
+  .contact-page {
+    padding: 4rem 1rem;
     background: linear-gradient(to right, #fff0f5, #fce4ec);
     min-height: 100vh;
     animation: fadeInPage 1s ease-in-out;
+    overflow-x: hidden;
   }
   
   .contact-title {
@@ -21,6 +26,7 @@
     margin-bottom: 2rem;
   }
   
+  /* ---------------- Layout ---------------- */
   .contact-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -29,16 +35,19 @@
     gap: 2rem;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
+    overflow-x: hidden;
   }
   
   /* ---------------- Contact Info ---------------- */
   .contact-info {
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
     background: #fff7fb;
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 10px 25px rgba(255, 105, 180, 0.1);
+    width: 100%;
   }
   
   .info-item {
@@ -64,6 +73,7 @@
     flex-direction: column;
     gap: 1rem;
     animation: slideInRight 1s ease forwards;
+    width: 100%;
   }
   
   .contact-form input,
@@ -75,6 +85,7 @@
     background: #fff9fb;
     transition: all 0.3s ease;
     font-family: 'Quicksand', sans-serif;
+    width: 100%;
   }
   
   .contact-form input:focus,
@@ -96,12 +107,50 @@
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Quicksand', sans-serif;
+    width: 100%;
   }
   
   .contact-form button:hover {
     background: #e44e8f;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 118, 172, 0.3);
+  }
+  
+  /* ---------------- Social Links ---------------- */
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon {
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icon.whatsapp {
+    color: white;
+    background-color: #25d366;
+  }
+  
+  .social-icon.instagram {
+    color: white;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  }
+  
+  .social-icon.tiktok {
+    background-color: #010101;
+    color: #69c9d0;
   }
   
   /* ---------------- Animations ---------------- */
@@ -138,49 +187,21 @@
     }
   }
   
-  /* ---------------- Responsive ---------------- */
+  /* ---------------- Mobile Fix ---------------- */
   @media (max-width: 768px) {
     .contact-container {
       flex-direction: column;
+      padding: 0;
     }
   
-    .contact-form,
-    .contact-info {
+    .contact-info,
+    .contact-form {
+      width: 100%;
+      padding: 1.2rem;
+    }
+  
+    .contact-form button {
       width: 100%;
     }
-  }
-  .social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-  
-  .social-icon {
-    font-size: 1.6rem;
-    padding: 0.6rem;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.2);
-  }
-  
-  .social-icon.whatsapp {
-    color: white;
-    background-color: #25d366;
-  }
-  
-  .social-icon.instagram {
-    color: white;
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  }
-  
-  .social-icon.tiktok {
-    background-color: #010101;
-    color: #69c9d0;
   }
   
